@@ -26,10 +26,16 @@ const Products = () => {
 
             {products.map((product)=>{
               return(
-            <div className="col-4" key={product.id}>
-              <img src={product.image} alt={product.description} />
-              <h2>{product.title}</h2>
-              <p>{product.price}</p>
+            <div className="col-4 mt-5" key={product.id}>
+             <div className="card">
+                <img src={product.image}  alt={product.description}/>
+                <div className="card-body">
+                  <h2 className="card-title">{product.title}</h2>
+                  <p className="card-text">{product.description}</p>
+                  <h3 className="card-text">{product.price}</h3>
+                 
+                </div>
+              </div>
            </div>
 
             )
