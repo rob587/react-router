@@ -1,0 +1,8 @@
+
+.mirror{
+     transform: scaleX(-1);
+}
+
+header{
+    background-color: rgb(181, 174, 174);
+}

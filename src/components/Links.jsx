@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 const Links = () => {
   return (
     <header>
-        <div className="container mt-5">
+        <div className="container ">
             <div className="row">
                 <div className="col-12">
                     <div className="d-flex justify-content-center">
-                        <h2>Visita la nostra pagina</h2>
+                        <h2>Visita la pagina</h2>
                     </div>
                     <ul className="list-unstyled d-flex justify-content-center mt-3 fs-4">
                         <li className="me-4">
