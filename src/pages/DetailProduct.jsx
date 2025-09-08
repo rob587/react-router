@@ -1,25 +1,24 @@
 import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 
 const DetailProduct = () => {
     
     const [newDetails, setNewDetails] = useState([])
-    
-    const newUrl = "https://fakestoreapi.com/products/:id"
-    
+    const {id} = useParams()
     
     
     const fetchDetail = () =>{
-        axios.get(newUrl).then((resp)=>{
+        axios.get(`https://fakestoreapi.com/products/${id}`).then((resp)=>{
           setNewDetails([resp.data])
         })
       }
 
         useEffect(() => {
           fetchDetail()
-        }, [])
+        }, [id])
 
 
 

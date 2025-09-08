@@ -33,9 +33,6 @@ const Products = () => {
                 <img className="card-img-top p-3" src={product.image}  alt={product.description}/>
                 <div className="card-body ">
                   <h2 className="card-title "><Link to={`/products/${product.id}`}>{product.title}</Link></h2>
-                  <p className="card-text">{product.description}</p>
-                  <h3 className="card-text mt-auto fw-bold">{product.price}$</h3>
-                 
                 </div>
               </div>
            </div>
